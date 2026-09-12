@@ -1,6 +1,8 @@
 # Ladybird Ever After Brand Kit
 
-The brand book for anyone designing or writing for Ladybird Ever After.
+**Start with the visual PDF:** [Ladybird-Ever-After-Brand-Kit.pdf](Ladybird-Ever-After-Brand-Kit.pdf)
+
+That file is the brand book. Colors, type, logos, and voice are on the page. Each logo and folder name is a link back to the file on GitHub.
 
 This is not the website. Stay inside these rules. Do not invent colors, fonts, or logo treatments.
 

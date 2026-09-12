@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ladybird Ever After Brand Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #5B6239;
+      --green-dk: #3A3F25;
+      --sage: #E4E7DA;
+      --cream: #F5F0EC;
+      --txt: #2B2B24;
+      --stone: #5C5A52;
+      --rose: #DDA3A0;
+      --blush: #F5E3E0;
+      --brass: #B08D5C;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @page { size: letter; margin: 0; }
+    html, body { background: var(--cream); }
+    body {
+      font-family: "Nunito", sans-serif;
+      color: var(--txt);
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    h1, h2, h3 { font-family: "Bree Serif", serif; font-weight: 400; line-height: 1.18; }
+    a { color: var(--rose); text-underline-offset: 2px; }
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      padding: .7in .7in .65in;
+      page-break-after: always;
+      break-after: page;
+    }
+    .page:last-child { page-break-after: auto; }
+    .cover {
+      background: var(--green);
+      color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .cover img { height: 46px; margin: 0 auto 1.6rem; }
+    .cover .eyebrow {
+      font-size: 11px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose);
+      margin-bottom: .8rem;
+    }
+    .cover h1 { font-size: 42px; }
+    .cover h1 em { font-style: italic; color: var(--rose); }
+    .cover p { margin-top: 1rem; color: rgba(245,240,236,.78); max-width: 26rem; margin-left: auto; margin-right: auto; }
+    .cover .repo {
+      margin-top: 2.2rem;
+      font-size: 12px;
+    }
+    .cover .repo a { color: var(--cream); }
+
+    .kicker {
+      font-size: 10px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose);
+      margin-bottom: .4rem;
+    }
+    h2 { font-size: 26px; margin-bottom: .45rem; }
+    h2 em { font-style: italic; color: var(--rose); }
+    .lead { color: var(--stone); margin-bottom: 1rem; font-size: 13.5px; max-width: 38rem; }
+
+    .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .swatch { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(91,98,57,.12); }
+    .chip { height: 54px; }
+    .swatch p { padding: .45rem .5rem .55rem; }
+    .swatch strong { display: block; font-size: 12px; }
+    .swatch span { font-size: 10px; color: var(--stone); }
+
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .pair div { border-radius: 12px; padding: 14px 16px; font-size: 13px; }
+    .pair .light { background: #fff; border: 1px solid rgba(91,98,57,.12); }
+    .pair .dark { background: var(--green); color: var(--cream); }
+
+    .type-row { background: #fff; border: 1px solid rgba(91,98,57,.12); border-radius: 12px; padding: 12px 16px; margin-bottom: 8px; }
+    .type-row .label { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--rose); margin-bottom: .3rem; }
+    .spec-h { font-family: "Bree Serif", serif; font-size: 28px; }
+    .spec-h em { color: var(--rose); font-style: italic; }
+    .btns { display: flex; gap: 8px; }
+    .btn { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 10px 18px; border-radius: 12px; }
+    .btn-g { background: var(--green); color: var(--cream); }
+    .btn-r { background: var(--rose); color: var(--txt); }
+
+    .logo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .logo-card { border-radius: 12px; border: 1px solid rgba(91,98,57,.12); overflow: hidden; background: #fff; }
+    .logo-card .stage { height: 92px; display: flex; align-items: center; justify-content: center; padding: 12px; }
+    .logo-card .stage.cream { background: var(--cream); }
+    .logo-card .stage.green { background: var(--green); }
+    .logo-card img { max-height: 68px; max-width: 88%; object-fit: contain; }
+    .logo-card .meta { padding: 8px 12px 10px; }
+    .logo-card h3 { font-size: 14px; margin-bottom: 2px; }
+    .logo-card p { font-size: 11px; color: var(--stone); }
+    .logo-card a { font-size: 10.5px; word-break: break-all; }
+
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .box { background: #fff; border: 1px solid rgba(91,98,57,.12); border-radius: 12px; padding: 12px 14px; font-size: 13px; }
+    .box.do { border-left: 4px solid var(--green); }
+    .box.dont { border-left: 4px solid var(--rose); }
+    .box .tag { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+    .box.do .tag { color: var(--green); }
+    .box.dont .tag { color: var(--rose); }
+    .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .pill { background: var(--sage); color: var(--green); border-radius: 999px; padding: 4px 10px; font-size: 11px; font-weight: 600; }
+    .shapes { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 10px; }
+    .shape { background: #fff; border: 1px solid rgba(91,98,57,.12); border-radius: 12px; padding: 12px; text-align: center; font-size: 12px; color: var(--stone); }
+    .shape .bar { height: 42px; background: var(--sage); margin-bottom: 8px; }
+    .r16 { border-radius: 16px; }
+    .r12 { border-radius: 12px; }
+    .foot { margin-top: 16px; font-size: 11px; color: var(--stone); }
+  </style>
+</head>
+<body>
+  <section class="page cover">
+    <img src="logos/02_Secondary_White_Long_No_Background.png" alt="Ladybird Ever After">
+    <p class="eyebrow">Brand Kit 2.0</p>
+    <h1>Green. Cream.<br>One <em>rose</em> moment.</h1>
+    <p>The visual brand book for Ladybird Ever After. Click a file name to open it on GitHub.</p>
+    <p class="repo"><a href="https://github.com/mcnallylaurence/BrandKit">github.com/mcnallylaurence/BrandKit</a></p>
+  </section>
+
+  <section class="page">
+    <p class="kicker">Colors</p>
+    <h2>Lead with green. Cream holds the page.</h2>
+    <p class="lead">Charcoal is the type. Rose is the only accent, once per composition. Brass is a hairline, never a fill. Gold is retired. Click a hex to copy from the tokens file if you are building.</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#5B6239"></div><p><strong>Green</strong><span>#5B6239</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#3A3F25"></div><p><strong>Green dark</strong><span>#3A3F25</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#4A5130"></div><p><strong>Green hover</strong><span>#4A5130</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#E4E7DA"></div><p><strong>Sage</strong><span>#E4E7DA</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#F5F0EC"></div><p><strong>Cream</strong><span>#F5F0EC</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#2B2B24"></div><p><strong>Charcoal</strong><span>#2B2B24</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#5C5A52"></div><p><strong>Stone</strong><span>#5C5A52</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#DDA3A0"></div><p><strong>Rose</strong><span>#DDA3A0</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#F5E3E0"></div><p><strong>Blush</strong><span>#F5E3E0</span></p></div>
+      <div class="swatch"><div class="chip" style="background:#B08D5C"></div><p><strong>Brass</strong><span>#B08D5C</span></p></div>
+    </div>
+    <div class="pair">
+      <div class="light"><strong>Everyday page</strong><br>Cream ground. Charcoal type. Green button. One rose overline.</div>
+      <div class="dark"><strong>A darker moment</strong><br>Green band. Cream type. Rose on one italic word. No gold.</div>
+    </div>
+    <p class="foot">Tokens: <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/colors/tokens.css">colors/tokens.css</a> · <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/colors/tokens.json">colors/tokens.json</a> · Do not use old gold #B8964E.</p>
+  </section>
+
+  <section class="page">
+    <p class="kicker">Type</p>
+    <h2>Bree Serif for titles. Nunito for the rest.</h2>
+    <p class="lead">Web fonts come from Google Fonts only. Do not load Playfair, Alice, or Recoleta Alt. The wordmark is a logo file, not a live font.</p>
+    <div class="type-row">
+      <p class="label">Heading · Bree Serif</p>
+      <p class="spec-h">They said yes in <em>Ireland.</em></p>
+    </div>
+    <div class="type-row">
+      <p class="label">Overline · Nunito 700</p>
+      <p style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#DDA3A0">Real Weddings &amp; Elopements</p>
+    </div>
+    <div class="type-row">
+      <p class="label">Body · Nunito 400</p>
+      <p style="color:#5C5A52">Have a look at real stories of couples who made the journey from the US to Ireland and loved their day.</p>
+    </div>
+    <div class="type-row">
+      <p class="label">Buttons · Nunito 700 · 12px corners</p>
+      <div class="btns">
+        <span class="btn btn-g">Get in touch</span>
+        <span class="btn btn-r">See packages</span>
+      </div>
+    </div>
+    <p class="foot">Notes: <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/typography/README.md">typography/README.md</a> · No em dashes. Use a hyphen or rewrite.</p>
+  </section>
+
+  <section class="page">
+    <p class="kicker">Logos</p>
+    <h2>Click a file name to open the mark.</h2>
+    <p class="lead">Green on cream. White on photos and green. Do not recolor, stretch, or retype the script. Folder: <a href="https://github.com/mcnallylaurence/BrandKit/tree/main/logos">logos/</a></p>
+    <div class="logo-grid">
+      <div class="logo-card">
+        <div class="stage cream"><img src="logos/01_Primary_Green_Shamrock_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>Green shamrock</h3>
+          <p>Favicon, header after scroll, social.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/01_Primary_Green_Shamrock_No_Background.png">logos/01_Primary_Green_Shamrock_No_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage green"><img src="logos/01_Primary_White_Shamrock_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>White shamrock</h3>
+          <p>On green, photo, or dark.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/01_Primary_White_Shamrock_No_Background.png">logos/01_Primary_White_Shamrock_No_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage cream" style="background:#5C5A52"><img src="logos/01.1_Green_Shamrock_White_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>Cream disc</h3>
+          <p>When the background is busy.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/01.1_Green_Shamrock_White_Background.png">logos/01.1_Green_Shamrock_White_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage cream"><img src="logos/Design_Mark_Shamrock_BW.png" alt=""></div>
+        <div class="meta">
+          <h3>Black mark</h3>
+          <p>One-color print and foil.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/Design_Mark_Shamrock_BW.png">logos/Design_Mark_Shamrock_BW.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage cream"><img src="logos/02_Secondary_Green_Long_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>Green wordmark, long</h3>
+          <p>Name on cream or white.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/02_Secondary_Green_Long_No_Background.png">logos/02_Secondary_Green_Long_No_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage green"><img src="logos/02_Secondary_White_Long_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>White wordmark, long</h3>
+          <p>Live site header on photo.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/02_Secondary_White_Long_No_Background.png">logos/02_Secondary_White_Long_No_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage cream"><img src="logos/02_Secondary_Green_Short_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>Green wordmark, stacked</h3>
+          <p>Narrow columns and print covers.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/02_Secondary_Green_Short_No_Background.png">logos/02_Secondary_Green_Short_No_Background.png</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="stage green"><img src="logos/02_Secondary_White_Short_No_Background.png" alt=""></div>
+        <div class="meta">
+          <h3>White wordmark, stacked</h3>
+          <p>Narrow columns on dark.</p>
+          <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/logos/02_Secondary_White_Short_No_Background.png">logos/02_Secondary_White_Short_No_Background.png</a>
+        </div>
+      </div>
+    </div>
+    <p class="foot">Add more files in <a href="https://github.com/mcnallylaurence/BrandKit/tree/main/logos/drop-here">logos/drop-here</a>.</p>
+  </section>
+
+  <section class="page">
+    <p class="kicker">Voice, shape, rules</p>
+    <h2>A trusted friend who has actually done this.</h2>
+    <p class="lead">Warm, expert, calm. Write like Yasmeen or Laurence. Not like a corporation. Not like a fairytale.</p>
+    <div class="cols">
+      <div class="box do"><p class="tag">Say this</p><p>We handle the stress. You get the joy. One USD contract. You never send money to Ireland.</p></div>
+      <div class="box dont"><p class="tag">Not this</p><p>Curate your perfect enchanted Emerald Isle wedding experience.</p></div>
+    </div>
+    <div class="pills">
+      <span class="pill">We handle the stress. You get the joy.</span>
+      <span class="pill">One USD contract.</span>
+      <span class="pill">You never send money to Ireland.</span>
+    </div>
+    <div class="shapes">
+      <div class="shape"><div class="bar r16"></div>Photos and cards · 16px</div>
+      <div class="shape"><div class="bar r12"></div>Buttons · 12px</div>
+      <div class="shape"><div class="bar" style="border-radius:0"></div>Full-bleed heroes · 0</div>
+    </div>
+    <div class="cols" style="margin-top:12px">
+      <div class="box do"><p class="tag">Do</p><p>Green on cream. Bree + Nunito. Real couple photos. The green shamrock on light.</p></div>
+      <div class="box dont"><p class="tag">Don't</p><p>Gold #B8964E. Playfair. Alice. Recoleta Alt. Stock photos. Em dashes. Ladybird Lite.</p></div>
+    </div>
+    <p class="foot">
+      Voice: <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/usage/voice.md">usage/voice.md</a>
+      · Rules: <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/usage/do-dont.md">usage/do-dont.md</a>
+      · Written kit: <a href="https://github.com/mcnallylaurence/BrandKit/blob/main/README.md">README.md</a>
+      · L&amp;Y Ventures LLC dba Ladybird Ever After. Use these files for Ladybird work only.
+    </p>
+  </section>
+</body>
+</html>
