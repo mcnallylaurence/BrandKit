@@ -10,7 +10,7 @@ Don't use the retired gold `#B8964E`, dusty blue, lavender, or more than one acc
 
 Do use Bree Serif for headings and Nunito for body, buttons, and nav.
 
-Don't load Playfair Display or Alice. Don't put Recoleta or Rolling Pen on the website.
+Don't load Playfair Display, Alice, or Recoleta Alt.
 
 ## Logos
 

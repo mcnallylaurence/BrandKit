@@ -1,47 +1,112 @@
 # Ladybird Ever After Brand Kit
 
-The public brand reference for Ladybird Ever After.
+The brand book for anyone designing or writing for Ladybird Ever After.
 
-Use this repo when you are designing, writing, building, or reviewing anything for the brand. Start here. Do not invent colors, fonts, or logo treatments.
+This is not the website. Stay inside these rules. Do not invent colors, fonts, or logo treatments.
 
-Open [`preview.html`](preview.html) in a browser to see the palette, type, and logos together.
+## Look
 
-## What this kit is
+Green leads. Cream holds the page. Charcoal is the type. Dusty rose is the only accent, once per composition. Gold is retired.
 
-Ladybird Ever After is an Ireland elopement and wedding planner for American couples. The look is green-led, cream, charcoal, and one dusty-rose accent. Gold is retired.
+## Colors
 
-This repo is Brand Kit 2.0.
+| Name | Hex | Use |
+|------|-----|-----|
+| Green | `#5B6239` | Lead color. Buttons, the largest brand presence |
+| Green dark | `#3A3F25` | Rare dark fills |
+| Green hover | `#4A5130` | Button hover |
+| Sage | `#E4E7DA` | Soft bands and pills |
+| Cream | `#F5F0EC` | Default background |
+| Charcoal | `#2B2B24` | Headings and short text |
+| Stone | `#5C5A52` | Long-form body and labels |
+| Rose | `#DDA3A0` | One accent per section: links, overlines, italic words |
+| Blush | `#F5E3E0` | Soft rose behind long text. Not full rose |
+| Brass | `#B08D5C` | 1px lines and icon strokes. Never a fill |
 
-## Start here
+Everyday page: cream ground, charcoal type, green button, one rose overline.
 
-| Need | File |
-|------|------|
-| Colors and how to use them | [colors/README.md](colors/README.md) |
-| CSS and JSON tokens | [colors/tokens.css](colors/tokens.css), [colors/tokens.json](colors/tokens.json) |
-| Fonts | [typography/README.md](typography/README.md) |
-| Logos and when to use each | [logos/README.md](logos/README.md) |
-| Voice | [usage/voice.md](usage/voice.md) |
-| Do and don't | [usage/do-dont.md](usage/do-dont.md) |
-| Photos | [usage/photography.md](usage/photography.md) |
-| Layout, corners, buttons | [usage/layout.md](usage/layout.md) |
+Darker moment: green band, cream type, rose on one italic word.
 
-## Quick rules
+Do not use the old gold `#B8964E`. Do not use dusty blue or lavender.
 
-- **Fonts on the web:** Bree Serif for headings. Nunito for everything else.
-- **Print and logo type:** Recoleta Alt and Rolling Pen Basic Two. Those stay off the website.
-- **Lead color:** green `#5B6239`.
-- **Default background:** cream `#F5F0EC`.
-- **Text:** charcoal `#2B2B24`.
-- **Accent:** dusty rose `#DDA3A0`. One rose moment per composition.
-- **Photos and cards:** 16px corners.
-- **Buttons:** 12px corners. Not sharp boxes. Not full pills.
-- **Punctuation:** no em dashes or en dashes. Use a hyphen or rewrite.
-- Do not use Playfair Display, Alice, or the retired gold `#B8964E`.
+## Type
 
-## Add more files
+On the web, only two fonts, from Google Fonts:
 
-Drop extra logos, vectors, or print files in [`logos/drop-here`](logos/drop-here). Then tell Cursor to sort them into the right folders.
+- **Bree Serif** (weight 400) for headings. One italic word in a heading can be rose.
+- **Nunito** for body (400), nav (600), and buttons / overlines (700).
+
+Do not load Playfair Display or Alice. Do not load Recoleta Alt. It is not part of the brand.
+
+The "Ladybird Ever After" wordmark is a script lockup in the logo files. Do not retype it in another script. Do not put that script on the website as a live font.
+
+No em dashes or en dashes. Use a hyphen or rewrite.
+
+## Logos
+
+Files live in [`logos/`](logos/).
+
+**Shamrock** (primary): compact mark for favicon, header after scroll, social, app icon.
+
+- Green on cream or white
+- White on green, photo, or dark
+- Cream disc when the background is busy
+- Black for one-color print
+
+**Wordmark** (secondary): when the name should read.
+
+- Green long on cream
+- White long on photo or green (live site header)
+- Stacked versions for narrow columns
+
+Do not recolor the mark to rose, brass, or gold. Do not stretch, rotate, or box it. If it gets tiny, use the shamrock alone.
+
+Drop extra files in [`logos/drop-here`](logos/drop-here).
+
+## Voice
+
+A trusted friend who has actually done this. Warm, expert, calm. Yasmeen and Laurence planned their own Irish wedding from the US. Write like that.
+
+Say this:
+
+- We handle the stress. You get the joy.
+- One USD contract. One point of contact.
+- You never send money to Ireland.
+- Here's what you need to know.
+
+Not this: magical, fairytale, enchanted, curate, bespoke, craic, corporate filler.
+
+Two public lines: Ladybird Packages (Fáilte, Grá, Sláinte, Ard) and Ladybird Luxury. Do not mention Ladybird Lite.
+
+## Shape
+
+- Photos and cards: 16px corners
+- Buttons: 12px corners. Not full pills. Not sharp boxes
+- Full-bleed heroes stay square to the screen
+
+## Photos
+
+Real Ladybird couples and real Irish venues. No generic stock. No heavy filters.
+
+## Do and don't
+
+Do lead with green on cream, charcoal type, one rose moment.
+
+Don't bring back gold, Playfair, Alice, or Recoleta Alt.
+
+Do use the green shamrock on cream and the white wordmark on photos.
+
+Don't recolor or retype the logo.
+
+Do write like Yasmeen or Laurence would say it out loud.
+
+## For developers
+
+You do not need these to use the brand. They are here if you are writing code.
+
+- [colors/tokens.css](colors/tokens.css)
+- [colors/tokens.json](colors/tokens.json)
 
 ## Rights
 
-Logos, colors, and copy in this repo belong to L&Y Ventures LLC, doing business as Ladybird Ever After. Use them only for Ladybird work. Do not reuse the mark for other brands.
+Logos, colors, and copy belong to L&Y Ventures LLC, doing business as Ladybird Ever After. Use them only for Ladybird work.

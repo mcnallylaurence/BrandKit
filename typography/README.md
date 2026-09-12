@@ -21,19 +21,11 @@ Load only these, from Google Fonts, before any page CSS:
 
 Bree Serif is Google Fonts-only at weight 400. Do not request 300 or 700. Nunito carries body, UI, and italics.
 
-## Print and logo type
-
-These stay in print, stationery, and the logo files. They are not web fonts for the site.
-
-| Font | Use |
-|------|-----|
-| Recoleta Alt | Print display |
-| Rolling Pen Basic Two | Script wordmark. This is the "Ladybird Ever After" logo type |
-
-Do not load Recoleta or Rolling Pen on Squarespace pages.
+The "Ladybird Ever After" wordmark is a script lockup in the logo files. Do not retype it. Do not load that script as a live web font.
 
 ## Do not use
 
+- Recoleta Alt
 - Playfair Display
 - Alice
 - Georgia, Times, or any other stand-in serif
