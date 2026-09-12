@@ -1,0 +1,22 @@
+:root {
+  --green: #5B6239;
+  --green-dk: #3A3F25;
+  --green-hv: #4A5130;
+  --sage: #E4E7DA;
+  --cream: #F5F0EC;
+  --warm: #F5F0EC;
+  --txt: #2B2B24;
+  --txt-mid: #5C5A52;
+  --stone: #5C5A52;
+  --rose: #DDA3A0;
+  --blush: #F5E3E0;
+  --brass: #B08D5C;
+  --gold: #DDA3A0;
+  --gold-lt: #DDA3A0;
+  --radius: 16px;
+  --radius-btn: 12px;
+  --pad-x: clamp(1.2rem, 5vw, 5rem);
+  --pad-y: clamp(3.5rem, 7vw, 6rem);
+  --font-display: "Bree Serif", serif;
+  --font-body: "Nunito", sans-serif;
+}

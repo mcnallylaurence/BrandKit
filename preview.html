@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ladybird Ever After Brand Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #5B6239;
+      --green-dk: #3A3F25;
+      --green-hv: #4A5130;
+      --sage: #E4E7DA;
+      --cream: #F5F0EC;
+      --txt: #2B2B24;
+      --txt-mid: #5C5A52;
+      --rose: #DDA3A0;
+      --blush: #F5E3E0;
+      --brass: #B08D5C;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Nunito", sans-serif;
+      background: var(--cream);
+      color: var(--txt);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--green);
+      color: var(--cream);
+      padding: 4.5rem 1.5rem 3.5rem;
+      text-align: center;
+    }
+    header img { height: 42px; margin-bottom: 1.6rem; }
+    header p.eyebrow {
+      font-size: .65rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose);
+      margin-bottom: .8rem;
+    }
+    h1, h2, h3 { font-family: "Bree Serif", serif; font-weight: 400; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h1 em { font-style: italic; color: var(--rose); }
+    header .sub { margin-top: 1rem; color: rgba(245,240,236,.78); max-width: 36rem; margin-left: auto; margin-right: auto; }
+    main { max-width: 1040px; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+    section { margin-bottom: 4rem; }
+    h2 { font-size: 1.8rem; margin-bottom: .4rem; }
+    .lead { color: var(--txt-mid); margin-bottom: 1.6rem; }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; }
+    .swatch { background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid rgba(91,98,57,.1); }
+    .chip { height: 88px; }
+    .swatch figcaption { padding: .75rem .9rem 1rem; }
+    .swatch strong { display: block; font-size: .92rem; }
+    .swatch span { font-size: .75rem; color: var(--txt-mid); }
+    .type-sample { background: #fff; border-radius: 16px; padding: 1.8rem 1.6rem; border: 1px solid rgba(91,98,57,.1); }
+    .type-sample h3 { font-size: 2rem; margin-bottom: .5rem; }
+    .type-sample h3 em { color: var(--rose); font-style: italic; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.4rem; }
+    .btn {
+      display: inline-block;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: .74rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .95rem 2.2rem;
+      border-radius: 12px;
+    }
+    .btn-green { background: var(--green); color: var(--cream); }
+    .btn-rose { background: var(--rose); color: var(--txt); }
+    .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    .logo-card { border-radius: 16px; padding: 1.6rem 1.2rem; text-align: center; border: 1px solid rgba(91,98,57,.1); }
+    .logo-card.cream { background: #fff; }
+    .logo-card.green { background: var(--green); color: var(--cream); }
+    .logo-card img { max-width: 100%; max-height: 92px; object-fit: contain; }
+    .logo-card p { margin-top: 1rem; font-size: .72rem; color: var(--txt-mid); }
+    .logo-card.green p { color: rgba(245,240,236,.7); }
+    footer { text-align: center; color: var(--txt-mid); font-size: .8rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logos/02_Secondary_White_Long_No_Background.png" alt="Ladybird Ever After">
+    <p class="eyebrow">Brand Kit 2.0</p>
+    <h1>Green. Cream.<br>One <em>rose</em> moment.</h1>
+    <p class="sub">Colors, type, and logos for anyone designing or writing for Ladybird Ever After.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Colors</h2>
+      <p class="lead">Lead with green. Cream behind the page. Charcoal for type. Rose only once per composition.</p>
+      <div class="swatches">
+        <figure class="swatch"><div class="chip" style="background:#5B6239"></div><figcaption><strong>Green</strong><span>#5B6239</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#3A3F25"></div><figcaption><strong>Green dark</strong><span>#3A3F25</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#4A5130"></div><figcaption><strong>Green hover</strong><span>#4A5130</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#E4E7DA"></div><figcaption><strong>Sage</strong><span>#E4E7DA</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#F5F0EC"></div><figcaption><strong>Cream</strong><span>#F5F0EC</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#2B2B24"></div><figcaption><strong>Charcoal</strong><span>#2B2B24</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#5C5A52"></div><figcaption><strong>Stone</strong><span>#5C5A52</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#DDA3A0"></div><figcaption><strong>Rose</strong><span>#DDA3A0</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#F5E3E0"></div><figcaption><strong>Blush</strong><span>#F5E3E0</span></figcaption></figure>
+        <figure class="swatch"><div class="chip" style="background:#B08D5C"></div><figcaption><strong>Brass</strong><span>#B08D5C · hairline only</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Type</h2>
+      <p class="lead">Bree Serif for headings. Nunito for body, buttons, and nav. Gold type is retired.</p>
+      <div class="type-sample">
+        <h3>They said yes in <em>Ireland.</em></h3>
+        <p>Have a look at real stories of couples who made the journey from the US and loved their day.</p>
+        <div class="btn-row">
+          <a class="btn btn-green" href="#">Get in touch</a>
+          <a class="btn btn-rose" href="#">See packages</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Logos</h2>
+      <p class="lead">Green on cream. White on photos and green. Do not recolor the mark.</p>
+      <div class="logo-grid">
+        <div class="logo-card cream">
+          <img src="logos/01_Primary_Green_Shamrock_No_Background.png" alt="Green shamrock">
+          <p>Primary green shamrock</p>
+        </div>
+        <div class="logo-card green">
+          <img src="logos/01_Primary_White_Shamrock_No_Background.png" alt="White shamrock">
+          <p>Primary white shamrock</p>
+        </div>
+        <div class="logo-card cream">
+          <img src="logos/01.1_Green_Shamrock_White_Background.png" alt="Shamrock on cream disc">
+          <p>Shamrock on cream disc</p>
+        </div>
+        <div class="logo-card cream">
+          <img src="logos/Design_Mark_Shamrock_BW.png" alt="Black shamrock">
+          <p>Black design mark</p>
+        </div>
+        <div class="logo-card cream">
+          <img src="logos/02_Secondary_Green_Long_No_Background.png" alt="Green long wordmark">
+          <p>Green wordmark, long</p>
+        </div>
+        <div class="logo-card green">
+          <img src="logos/02_Secondary_White_Long_No_Background.png" alt="White long wordmark">
+          <p>White wordmark, long</p>
+        </div>
+        <div class="logo-card cream">
+          <img src="logos/02_Secondary_Green_Short_No_Background.png" alt="Green stacked wordmark">
+          <p>Green wordmark, stacked</p>
+        </div>
+        <div class="logo-card green">
+          <img src="logos/02_Secondary_White_Short_No_Background.png" alt="White stacked wordmark">
+          <p>White wordmark, stacked</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>L&amp;Y Ventures LLC doing business as Ladybird Ever After. Use these files for Ladybird work only.</footer>
+  </main>
+</body>
+</html>
